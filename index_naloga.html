@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KŠP</title>
+</head>
+<body>
+    <script>
+        let usersChoice = prompt("Pozdravljen. Si pripravljen na igro kamen, škarje, papir z računalnikom. Vpiši kamen, škarje ali papir.")
+        let computersChoice = Math.floor(Math.random()*3)
+        let array = ["kamen","škarje","papir"]
+        if(usersChoice == array[computersChoice]){
+            prompt("Izenačeno.")
+        }
+        else if(usersChoice=="kamen" && array[computersChoice]=="papir"){
+            prompt("Računalnik je zmagal.")
+        }
+        else if(usersChoice=="kamen" && array[computersChoice]=="škarje"){
+            prompt("Zmagal si.")
+        }
+        else if(usersChoice=="škarje" && array[computersChoice]=="papir"){
+            prompt("Zmagal si.")
+        }
+        else if(usersChoice=="škarje" && array[computersChoice]=="kamen"){
+            prompt("Računalnik je zmagal.")
+        }
+        else if(usersChoice=="papir" && array[computersChoice]=="kamen"){
+            prompt("Zmagal si.")
+        }
+        else if(usersChoice=="papir" && array[computersChoice]=="škarje"){
+            prompt("Računalnik je zmagal.")
+        }
+
+        else{
+            prompt("Nisi vstavil zahtevane besede. Poskusi še enkrat.")
+        }
+    </script>
+</body>
+</html>

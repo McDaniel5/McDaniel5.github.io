@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R&P&S</title>
+</head>
+<body>
+    <button class="papir">Kamen</button>
+    <button class="škarje">Škarje</button>
+    <button class="papir">Papir</button>
+    <div>
+        Program je izbral:
+    </div>
+    <div>
+        Rezultat: <span class="Rezultat"></span>
+    </div>
+
+    <script>
+
+        function compareResults(){
+            let rezultat = document.querySelector('.rezultat')
+        }
+
+        if(computersChoice == usersChoice){
+            rezultat.innerHTML = "Izenačeno"
+        }
+
+        elif(computersChoice)
+
+
+        let items = ["Kamen", "Škarje", "papir"]
+        let random=Math.floor(Math.random()*3)
+        let computersChoice = items[random]
+        let usersChoice = null
+
+        document.querySelector('.kamen').onclick = function() {
+            usersChoice = "kamen"
+            computersChoice = items[random]
+            console.log(computersChoice, usersChoice)
+        }
+        document.querySelector('.papir').onclick = function() {
+            usersChoice = "papir"
+            computersChoice = items[random]
+            console.log(computersChoice, usersChoice)
+        }
+        document.querySelector('.škarje').onclick = function() {
+            usersChoice = "škarje"
+            computersChoice = items[random]
+            console.log(computersChoice, usersChoice)
+        }
+
+        
+
+    </script>
+</body>
+</html>

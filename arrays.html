@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <ul>
+
+
+    </ul>
+    <script>
+        // Array
+
+        let imena = ["Gregor", "Benjamin", "Patrik", "Danijel"]
+
+        imena[0] = "Grega" //zamenjam ime na določenem mestu
+
+        imena.push("Darth Vader") //ime se doda na konec seznama
+        imena.push("Obi-van Kenobi")
+        imena.push(1234567)
+        imena.push(true)
+
+        //odstranjanje imena iz seznama
+        imena.splice(4,1) // (kateri element, koliko teh elementov)
+
+        console.log(imena[0]) //0 pomeni, da izpiše prvo ime
+        console.log(imena[1])
+
+        for(let ime of imena){ // namesto "ime" lahko piše karkoli, vedel bo, da se nanašana seznam
+            console.log(ime)
+        }      //naloga: zapiši seznam v unordered list
+    </script>
+</body>
+</html>
